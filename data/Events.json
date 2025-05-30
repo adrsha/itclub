@@ -1,11 +1,22 @@
 [
   {
     "id": "1",
-    "eventName": "",
-    "eventDate": "",
-    "eventDescription": "New Events Will Be Displayed Here!",
-    "eventImg": "",
-    "eventLink": "",
-    "display": false
+    "eventName": "Examination",
+    "eventDate": "2025-05-30",
+    "eventTime": "4:30-5:30",
+    "eventDescription": "Examination for the IT Club members will be held on the mentioned date and time. Please ensure to prepare accordingly.",
+    "eventImg": "call for members.png",
+    "eventLink": "https://www.instagram.com/p/DKHwigiTb2U/",
+    "display": true
+  },
+  {
+    "id": "2",
+    "eventName": "Interview",
+    "eventDate": "2025-05-31",
+    "eventTime": "10:10",
+    "eventDescription": "Interviews for new members will take place on the specified date. Make sure to be prepared and punctual.",
+    "eventImg": "call for members.png",
+    "eventLink": "https://www.instagram.com/p/DKHwigiTb2U/",
+    "display": true
   }
 ]
