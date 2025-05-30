@@ -1,11 +1,11 @@
 [
   {
     "id": "1",
-    "eventName": "",
-    "eventDate": "",
-    "eventDescription": "New Events Will Be Displayed Here!",
+    "eventName": "Interview of new members",
+    "eventDate": "2025-05-31",
+    "eventDescription": "Interview of new members of KEC IT CLUB",
     "eventImg": "",
-    "eventLink": "",
-    "display": false
+    "eventLink": "https://www.instagram.com/p/DKHwigiTb2U/",
+    "display": true
   }
 ]
