@@ -141,8 +141,21 @@
   transform-origin: 50% 50%;
 }
 
+.columnLink {
+  display: flex;
+  flex-direction: column;
+}
+
 .noticeSpButtons {
   margin-left: 1rem;
+}
+
+.noticeSpButtons button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color1);
+
 }
 
 .discordButton {
@@ -167,6 +180,7 @@
   width: 2em;
   opacity: 0.8;
   transition: opacity 0.2s ease-in-out;
+  margin: 8px;
 }
 
 .discordButton,
