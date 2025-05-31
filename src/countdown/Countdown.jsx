@@ -195,12 +195,13 @@ function Countdown(props) {
       <>
         <div className="countdown">
           <div className="countdownObj">
-            <div className="dayshour">∞</div>
-            <div className="minsec">∞</div>
+            <div className="dayshour"></div>
+                <div className="minsec">[ Event Coming Soon... ]</div>
           </div>
           <div className="notcountdown">
-            No active Programs <br />
-            For now :|
+            We are working on the next event!
+            <br />
+            stay tuned 💻
             <br />
           </div>
           <img className="mouseimg" src={mouseImg} alt="mouse img" />

@@ -1,13 +1,13 @@
 [
   {
-    "id": "1",
-    "eventName": "Interview",
-    "eventDate": "2025-05-31",
-    "eventTime": "10:00",
-    "eventLocation": "Online",
-    "eventDescription": "Interviews for new members will take place on the specified date. Make sure to be prepared and punctual.",
-    "eventImg": "call for members.png",
-    "eventLink": "https://www.instagram.com/p/DKHwigiTb2U/",
-    "display": true
+    "id": "",
+    "eventName": "",
+    "eventDate": "",
+    "eventTime": "",
+    "eventLocation": "",
+    "eventDescription": "",
+    "eventImg": "",
+    "eventLink": "",
+    "display": false
   }
 ]
