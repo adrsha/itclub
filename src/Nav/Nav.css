@@ -264,3 +264,24 @@ nav.NavContainer .NavItems:hover .NavItemIcons {
 #navDestroyer69:hover::after {
     opacity: 1;
 }
+
+/*NEW: For Mobile */
+@media only screen and (max-width: 768px) {
+nav.NavContainer .NavItems {
+    font-size: 4vh;
+    position: fixed;
+    color: var(--color1);
+    display: flex;
+    border-radius: 3vh 0vh 0vh 3vh;
+
+    /* Ensure 3D context */
+    left: 50%;
+    border: 2px solid var(--color3A);
+    width: fit-content;
+    padding: 0.5em;
+    margin: auto;
+    transform-style: preserve-3d;
+    outline-offset: 0px;
+    backface-visibility: hidden;
+}
+}
