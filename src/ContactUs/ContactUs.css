@@ -131,3 +131,11 @@ input:-webkit-autofill:active{
   width: 40vw;
   padding: 10px;
 }
+
+.formError {
+  color: white;
+  font-size: 0.85rem;
+  margin: 10px;
+  margin-top: 4px;
+  font-weight: 500;
+}
