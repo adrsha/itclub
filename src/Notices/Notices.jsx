@@ -8,6 +8,19 @@ import { LenisComponent } from "../Lenis/Lenis.js";
 import "./Notices.css";
 
 let noticesHtml = noticeData.map((noti) => {
+if (noti.noticeHead === "") {
+    return (
+      <div key={noti.id} className="Eventlists">
+        <Cards
+          id="DetailCard"
+          title="No Notices"
+          description="Currently, there are no notices available."
+          
+        />
+      </div>
+    );
+  }
+
   if (noti.id % 2 === 0) {
     return (
       <div key={noti.id} className="Eventlists">
@@ -16,7 +29,7 @@ let noticesHtml = noticeData.map((noti) => {
           id="DetailCard"
           title={noti.noticeHead}
           description={noti.noticeBody}
-          button1="View Events"
+          button1="View Notice"
           button2="Learn More"
         />
       </div>
@@ -28,7 +41,7 @@ let noticesHtml = noticeData.map((noti) => {
           id="DetailCard"
           title={noti.noticeHead}
           description={noti.noticeBody}
-          button1="View Events"
+          button1="View Notice"
           button2="Learn More"
           link1={noti.eventLink}
           link2={noti.noticeInfoLink}
