@@ -1,0 +1,87 @@
+[
+  {
+    "post": "President",
+    "attr": "president",
+    "val": "Sujan Sapkota"
+  },
+  {
+    "post": "Vice President",
+    "attr": "vicePresident",
+    "val": "Sworup Karki"
+  },
+  {
+    "post": "Secretary",
+    "attr": "secretary",
+    "val": "Aryan Manandhar"
+  },
+  {
+    "post": "Joint Secretary",
+    "attr": "jointSecretary",
+    "val": "Jyoti Kumari Gupta"
+  },
+  {
+    "post": "Project Manager",
+    "attr": "projectManager",
+    "val": "Shreyas Acharya"
+  },
+  {
+    "post": "Event Manager",
+    "attr": "eventManager",
+    "val": "Pranav Ram Joshi"
+  },
+  {
+    "post": "Lead Developer",
+    "attr": "leadDeveloper",
+    "val": "Ankit Shrestha"
+  },
+  {
+    "post": "Lead Designer",
+    "attr": "leadDesigner",
+    "val": "Sneha Karki"
+  },
+  {
+    "post": "Executive Member",
+    "attr": "executiveMember1",
+    "val": "Adarsha Acharya"
+  },
+  {
+    "post": "Executive Member",
+    "attr": "executiveMember2",
+    "val": "Aayush Lamsal"
+  },
+  {
+    "post": "Executive Member",
+    "attr": "executiveMember3",
+    "val": "Aashika Ghimire"
+  },
+  {
+    "post": "Executive Member",
+    "attr": "executiveMember4",
+    "val": "Ayush Malla"
+  },
+  {
+    "post": "Executive Member",
+    "attr": "executiveMember5",
+    "val": "Prasun Shiwakoti"
+  },
+  {
+    "post": "Executive Member",
+    "attr": "executiveMember6",
+    "val": "Khushi Khati"
+  },
+  {
+    "post": "Executive Member",
+    "attr": "executiveMember8",
+    "val": "Raj Timalsina"
+  },
+  {
+    "post": "Executive Member",
+    "attr": "executiveMember9",
+    "val": "Hritik Thapa"
+  },
+  {
+    "post": "Executive Member",
+    "attr": "executiveMember10",
+    "val": "Bikash Mishra"
+  }
+]
