@@ -28,6 +28,8 @@ const Carousel = (props) => {
 
 function App() {
     const [noticeVal, setNoticeVal] = useState(0);
+    console.log("🫵🏻 Vai Inspect garera heris hai 😂😂😂")
+
     useEffect(() => {
        const interval = setInterval(() => {
             setNoticeVal((prevVal)=>{

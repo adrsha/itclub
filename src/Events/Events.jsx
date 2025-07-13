@@ -20,7 +20,8 @@ function Events() {
                 id="DetailCard"
                 title="Coming Soon"
                 description="Stay tuned for our upcoming events!"
-                button1="Notify Me"   
+                button1="Notify Me"
+                disabled1={true}
               />
             </div>
           );

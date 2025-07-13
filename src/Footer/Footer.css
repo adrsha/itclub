@@ -37,3 +37,17 @@ footer ul{
 footer ul > li{
   color: var(--color1a);
 }
+
+.footerRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  /* flex-wrap: wrap; */  
+  font-size: 13px;
+}
+
+.footerCollege a {
+  color: var(--primary-color);
+  text-decoration: underline;
+}

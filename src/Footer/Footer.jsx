@@ -1,17 +1,21 @@
 import "./Footer.css";
-export default function Footer(params) {
-  // get year
+
+export default function Footer() {
   const currentYear = new Date().getFullYear();
   return (
     <footer>
-      <div className="footerText">© {currentYear} All Rights Reserved.<hr/>
-        <span style={{ color: "var(--primary-color)" }}>
-          <a href="https://www.kecktm.edu.np/" target="_blank" rel="noopener noreferrer">
-             <strong>Kathmandu Engineering College</strong>
+      <div className="footerRow">
+        <span>© {currentYear} All Rights Reserved.</span>
+        <span className="footerCollege">
+          <a
+            href="https://www.kecktm.edu.np/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <strong>Kathmandu Engineering College</strong>
           </a>
         </span>
       </div>
-     
     </footer>
   );
 }
