@@ -162,11 +162,18 @@ function Cards(props) {
         </div>
         <hr />
         <div className="cardActions">
-          {Object.prototype.hasOwnProperty.call(props, "button1") ? (
-            <a href={props.link1}>
-              <button className="activated">{props.button1}</button>
-            </a>
-          ) : null}
+ {Object.prototype.hasOwnProperty.call(props, "button1") ? (
+  <a
+    href={props.disabled1 ? "" : props.link1}
+    onClick={e => props.disabled1 && e.preventDefault()}
+    title={props.disabled1 ? `😔 ${props.button1} is not available right now` : ""}
+  >
+    <button className="activated" disabled={props.disabled1}>
+      {props.button1}
+    </button>
+  </a>
+) : null}
+
           {Object.prototype.hasOwnProperty.call(props, "button2") ? (
             <a href={props.link2}>
               <button className="deactivated">{props.button2}</button>

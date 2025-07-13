@@ -42,16 +42,30 @@ export default function ContactUs() {
         For more information and to stay updated on our activities, follow us on
         our social media channels as well.
         <br />
-        Email : kecktm.it.club@gmail.com
+        Email : <a className="specialLinks" href="mailto:kecktm.it.club@gmail.com">
+          kecktm.it.club@gmail.com </a>
         <br />
         Follow us on{" "}
-        <a className="specialLinks" href="https://www.facebook.com/kecitclub/">
-          Facebook
-        </a>{" "}
-        and{" "}
-        <a className="specialLinks" href="https://www.instagram.com/kecitclub/">
-          Instagram
-        </a>
+        <a
+  className="specialLinks"
+  href="https://www.facebook.com/kecitclub/"
+  target="_blank"
+  rel="noopener noreferrer"
+  style={{ color: "#1877F2", fontWeight: "bold", textDecoration: "none" }}
+>
+  Facebook
+</a>{" "}
+and{" "}
+<a
+  className="specialLinks"
+  href="https://www.instagram.com/kecitclub/"
+  target="_blank"
+  rel="noopener noreferrer"
+  style={{ color: "#E1306C", fontWeight: "bold", textDecoration: "none" }}
+>
+  Instagram
+</a>
+
         .
       </div>
       <div className="contactUsContent">

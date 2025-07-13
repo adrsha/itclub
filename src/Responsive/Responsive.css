@@ -230,7 +230,7 @@
     border: 1px solid var(--color3A);
     /* box-shadow: inset 0px 0px 1rem 1rem var(--color3A), 0px 0px 1rem 1rem var(--color3A); */
     position: static;
-    transform: none;
+    transform: none !important;
     justify-content: center;
     margin: 0;
     border-radius: 1vh;
