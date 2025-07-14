@@ -35,10 +35,11 @@ function Events() {
               <Cards
                 id="DetailCard"
                 title={ev.eventName}
+                button1="Register"
+                link1={ev.eventLink}
                 description={ev.eventDescription}
                 date={ev.eventDate}
-                button1="Roll In"
-                button2="Learn More"
+               
               />
             </div>
           );
@@ -48,9 +49,9 @@ function Events() {
               <Cards
                 id="DetailCard"
                 title={ev.eventName}
-                button1="Roll In"
+                button1="Register"
                 link1={ev.eventLink}
-                button2="Learn More"
+              
                 link2={ev.eventLink}
                 description={ev.eventDescription}
               />
