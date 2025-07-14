@@ -14,4 +14,3 @@
   * refactor: A code change that neither fixes a bug nor adds a feature
   * perf: A code change that improves performance
   * chore: Changes to the build process or auxiliary tools and libraries such as documentation generation
-
