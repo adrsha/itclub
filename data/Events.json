@@ -1,13 +1,13 @@
 [
   {
-    "id": "",
-    "eventName": "",
-    "eventDate": "",
-    "eventTime": "",
-    "eventLocation": "",
-    "eventDescription": "",
-    "eventImg": "",
-    "eventLink": "",
-    "display": false
+    "id": "1",
+    "eventName": "AWS Fundamentals Workshop",
+    "eventDate": "2025-07-19T10:00:00Z",
+    "eventTime": "10:00 AM",
+    "eventLocation": "Kathmandu engineering college",
+    "eventDescription": "KEC IT Club is organizing an AWS Fundamentals Workshop to introduce students to the basics of Amazon Web Services. This workshop will cover essential AWS services, cloud computing concepts, and hands-on labs to help participants gain practical experience.",
+    "eventImg": "/events/0.png",
+    "eventLink": "https://docs.google.com/forms/d/e/1FAIpQLSfxrMsINJyeBHC-pKblTiVXd_d7oRh971l2b3bwVlUn6O-kRQ/viewform",
+    "display": true
   }
 ]
