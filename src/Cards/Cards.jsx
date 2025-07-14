@@ -158,7 +158,11 @@ function Cards(props) {
           {Object.prototype.hasOwnProperty.call(props, "title") ? (
             <div className="cardTitle">{props.title}</div>
           ) : null}
-          <div className="cardContent">{props.description}</div>
+             <div
+        dangerouslySetInnerHTML={{
+          __html: props.description || "<p>No New Notices!!</p>",
+        }}
+      />
         </div>
         <hr />
         <div className="cardActions">
@@ -188,36 +192,38 @@ function Cards(props) {
       : "exists";
 
     return (
-      <div
-        className={`glassCards glass parallaxEl ${noticeStyle}`}
-        id={props.id}
-      >
-        {Object.prototype.hasOwnProperty.call(props, "title") ? (
-          <div className="cardTitle">{props.title}</div>
-        ) : null}
-        {Object.prototype.hasOwnProperty.call(props, "content") ? (
-          <div className="cardContent" id="noticeContent">
-            {props.content || "No New Notices!!"}
-            <div className="noticeSpButtons">
-              {props.buttonDiscord ? (
-                <a href={props.buttonDiscord}>
-                  <button className="discordButton">
-                    <img src="/discord_logo.png" alt="Discord Logo" />
-                  </button>
-                </a>
-              ) : null}
 
-              {props.buttonForm ? (
-                <a href={props.buttonForm}>
-                  <button className="formButton">
-                    <img src="/forms_logo.png" alt="Forms Logo" />
-                  </button>
-                </a>
-              ) : null}
-            </div>
-          </div>
-        ) : null}
+      
+   <div className={`glassCards glass parallaxEl ${noticeStyle}`} id={props.id}>
+  {props.title && <div className="cardTitle">{props.title}</div>}
+
+  {props.content && (
+    <div className="cardContent" id="noticeContent">
+      <div
+        dangerouslySetInnerHTML={{
+          __html: props.content || "<p>No New Notices!!</p>",
+        }}
+      />
+      <div className="noticeSpButtons">
+        {props.buttonDiscord && (
+          <a href={props.buttonDiscord} target="_blank" rel="noopener noreferrer">
+            <button className="discordButton">
+              <img src="/discord_logo.png" alt="Discord Logo" />
+            </button>
+          </a>
+        )}
+
+        {props.buttonForm && (
+          <a href={props.buttonForm} target="_blank" rel="noopener noreferrer">
+            <button className="formButton">
+              <img src="/forms_logo.png" alt="Forms Logo" />
+            </button>
+          </a>
+        )}
       </div>
+    </div>
+  )}
+</div>
     );
   } else if (props.id == "image") {
     return (

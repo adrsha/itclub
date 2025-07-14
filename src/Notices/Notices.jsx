@@ -21,35 +21,22 @@ if (noti.noticeHead === "") {
     );
   }
 
-  if (noti.id % 2 === 0) {
+  
     return (
-      <div key={noti.id} className="Eventlists">
-        <div className="emptyspace"></div>
+      <div key={noti.id} className="Eventlists" >
         <Cards
           id="DetailCard"
           title={noti.noticeHead}
           description={noti.noticeBody}
-          button1="View Notice"
-          button2="Learn More"
-        />
-      </div>
-    )
-  } else {
-    return (
-      <div key={noti.id} className="Eventlists">
-        <Cards
-          id="DetailCard"
-          title={noti.noticeHead}
-          description={noti.noticeBody}
-          button1="View Notice"
-          button2="Learn More"
+          button1="Register Now"
+          button2="Follow Us"
           link1={noti.eventLink}
           link2={noti.noticeInfoLink}
         />
         <div className="emptyspace"></div>
       </div>
     );
-  }
+  
 });
 
 function Events() {
