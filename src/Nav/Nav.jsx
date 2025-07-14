@@ -81,11 +81,10 @@ function Nav(props) {
         {
           EventData.display && location.pathname == '/' && (
             <div className="EventLogo">
-              <a href={EventData.eventLink}>
+              <a href={EventData.eventLink} className="eventLogoContainer">
                 <div className="eventName">
                 {EventData.eventName}
                 </div>
-                <div className="EventLogoinner" style={{backgroundImage: `url(${EventData.eventImg})`}}></div>
               </a>
             </div>
           )
@@ -109,9 +108,11 @@ function Nav(props) {
           {Object.prototype.hasOwnProperty.call(props, "home") ? (
             <a href="/" className="NavItems" id="events_nav">
               Home
+              
               <span className="NavItemIcons glass">
                 <img src={eventsImg} alt="" />
               </span>
+              
             </a>
           ) : null}
 
