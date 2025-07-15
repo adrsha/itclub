@@ -89,10 +89,9 @@ function Cards(props) {
         // + MembersOpen}
         id="MembersCard"
       >
-        <div className="cardTitle">
-          Our
-          <br />
-          Members
+        <div className="cardTitle" style={{ marginBottom: "1rem", marginTop: "20px" }}>
+        
+          Our Members
         </div>
         <div className={"membersList"}>{cardHtml}</div>
         {

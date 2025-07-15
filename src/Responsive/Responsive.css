@@ -50,15 +50,15 @@
     min-height: 40vh;
     height: auto;
     top: auto;
-    background: var(--color4aA);
-    bottom: 0;
+    background: var(--color4aA) !important;
+    bottom: 0 !important;
   }
 
   div.glassCards#MembersCard> div.membersList{
     padding: 0vw;
     height: auto;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: flex-start !important;
     justify-content: center;
   }
   #membersButton{
@@ -101,7 +101,6 @@
   }
   .EventLogo{
     background-color: var(--color3A);
-    position: fixed;
     left: calc(50vw - 25px);
   }
   .EventLogoinner:hover{
@@ -112,7 +111,7 @@
     width: 0vw;
 }
   div.aboutUsContent div.membersToggle div.glassCards#MembersCard{
-      position: fixed;
+      position: fixed !important;
       width: 100vw;
       height: 100vh;
       top: 0;
@@ -120,19 +119,23 @@
       right: 0;
       bottom: 0;
       border-radius: 0;
-      background: transparent;
+      padding: 0;
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+      flex-direction: column !important;
   }
   div.membersList{
-      display: flex;
-      margin-left: 3vw;
-      margin-right: 3vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2vw;
+    gap: 1rem;
   }
     div.membersList .tablet{
         min-width: 40vw;
+        display: block !important;
+        margin: 0 auto;
+        padding: 1vw;
+        width: 100%;
     }
   .contactUsContent{
     display: flex;
