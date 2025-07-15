@@ -15,6 +15,8 @@ export default function AboutUs() {
         const memDiv = document.getElementById("MembersCard");
         const memBut = document.getElementById("membersButton");
         memDiv.classList.toggle("parallaxEl");
+        const buttonText = memBut.querySelector("button");
+
         // Toggle the visibility of the div
         if (toggleMem === 0) {
             memDiv.style.opacity = "1";
@@ -24,11 +26,53 @@ export default function AboutUs() {
                 memBut.style.position = "fixed";
                 memBut.style.bottom = "5vh";
                 memBut.style.zIndex = "10";
+                buttonText.innerText = "Close";
+                const navbar = document.querySelector(".theNav");
+                
+                if (navbar) {
+                    navbar.style.display = "none"; // hide the navbar
+                    document.querySelector(".lines").style.display= 'none';
+                    document.querySelector(".pageContent").style.display= 'none';
+                    document.querySelector(".countdown").style.display= 'none';
+                    document.querySelector(".contactUs").style.display= 'none';
+                    document.querySelector(".aboutUsText").style.display= 'none';
+
+                }
+                // disable background scroll
+                document.body.style.overflow = "hidden";
+                // disbale backgroung sleecting
+                document.body.style.userSelect = "none";
+                
+                memDiv.style.overflowY = "scroll";
+
+
+
+
+
             }
         } else {
             memDiv.style.opacity = "0";
             toggleMem = 0;
             memBut.style = "";
+            buttonText.innerText = "Members";
+          
+            const navbar = document.querySelector(".theNav");
+            if (navbar) {
+                navbar.style = ""; // show the navbar
+                                   document.querySelector(".lines").style = "";
+                                        document.querySelector(".pageContent").style = "";
+                                        document.querySelector(".countdown").style = "";
+                                        document.querySelector(".contactUs").style = "";
+                                        document.querySelector(".aboutUsText").style = "";
+            }
+            // enable background scroll
+            document.body.style.overflow = "auto";
+            // enable background selecting
+            document.body.style.userSelect = "auto";
+            // display the members list in a scrollable div
+            memDiv.style.display = "flex";
+            
+
         }
 
     }
