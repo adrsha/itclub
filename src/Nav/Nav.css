@@ -268,5 +268,9 @@ nav.NavContainer .NavItems:hover .NavItemIcons {
     opacity: 1;
 }
 
+.eventLogoContainer{
+    justify-content: center;
+    margin-bottom: 0.3rem;
+}
 
 

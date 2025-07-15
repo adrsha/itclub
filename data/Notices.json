@@ -4,7 +4,7 @@
     "noticeBody": "<div style=\"font-family: 'Segoe UI', Roboto, sans-serif; line-height: 1.6;\"><h2 style=\"font-size: 1.5rem; color:white; margin-bottom: 0.5rem;\">🚀 Leapfrog is hiring!</h2><p>Leapfrog is currently seeking <strong>fresh graduates</strong> or <strong>early-career professionals</strong> for the following roles:</p><ul style=\"padding-left: 1.2rem; margin: 0.5rem 0;\"><li>Associate Software Engineer (Web Development)</li><li>Associate Machine Learning (ML) Engineer</li><li>Associate Data Engineer</li></ul><p>🎯 If you are a recent graduate or a student below 8th semester and believe you’re a good fit, please apply!</p><p>📩 By filling out the form, you’ll be considered for both current openings and future opportunities.</p></div>",
     "buttonDiscord": "",
     "buttonForm": "https://docs.google.com/forms/d/e/1FAIpQLSdBPO8Y8xFHxCWUknhhffLaePg0ZeRKMOAf3xsDFDRHAPB0wQ/viewform?usp=preview",
-    "posterImage": "",
+    "posterImage": "public/notices/leapfrog.png",
     "eventLink": "https://docs.google.com/forms/d/e/1FAIpQLSdBPO8Y8xFHxCWUknhhffLaePg0ZeRKMOAf3xsDFDRHAPB0wQ/viewform?usp=preview",
     "noticeInfoLink": "https://www.instagram.com/kecitclub/"
   }
