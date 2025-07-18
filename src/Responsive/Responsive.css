@@ -14,10 +14,13 @@
   }
   #notice {
     position: relative;
-    z-index: 2;
+    z-index: 1;
     width: 60vw;
     margin-left: auto;
     margin-right: auto;
+  }
+  .glassCards#circleButtons{
+    z-index: 1;
   }
 
   .glassCards#image{
@@ -103,41 +106,8 @@
     background-color: var(--color3A);
     left: calc(50vw - 25px);
   }
-  .EventLogoinner:hover{
-    background-color: var(--color3);
-    border-radius: 15%;
-  }
-  .EventLogo:hover a .eventName {
-    width: 0vw;
-}
-  div.aboutUsContent div.membersToggle div.glassCards#MembersCard{
-      position: fixed !important;
-      width: 100vw;
-      height: 100vh;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      border-radius: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column !important;
-  }
-  div.membersList{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 2vw;
-    gap: 1rem;
-  }
-    div.membersList .tablet{
-        min-width: 40vw;
-        display: block !important;
-        margin: 0 auto;
-        padding: 1vw;
-        width: 100%;
-    }
-  .contactUsContent{
+
+    .contactUsContent{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -163,47 +133,6 @@
     width: 50vw;
     padding: 2rem;
   }
-  #send{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 4vh;
-    width: 9vh;
-  }
-  /*  */
-  .aboutUs{
-    padding-left: 5vw;
-    padding-right: 5vw;
-    margin: 3vw;
-  }
-  .aboutUs img{
-    display: none;
-  }
-  
-  .aboutUsTitle {
-    font-size: var(--titleText);
-    margin-bottom: 1em;
-  }
-  .aboutUsContent{
-    padding: 1em;
-  }
-  .aboutUsText p{
-    padding: 0.5rem;
-    font-size: var(--fontsize);
-  }
-  
-  .aboutUsText {
-    margin-bottom: 3em;
-  }
-  #membersButton button{
-    width: var(--buttonWidth);
-    display: flex;
-    justify-content: center;
-    font-size: 1.5em;
-    padding-left: 3em;
-    padding-right: 3em;
-  }
-  /*  */
   .pageContent{
     margin: 3vw;
   }

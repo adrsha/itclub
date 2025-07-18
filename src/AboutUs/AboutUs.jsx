@@ -32,10 +32,10 @@ export default function AboutUs() {
                 if (navbar) {
                     navbar.style.display = "none"; // hide the navbar
                     document.querySelector(".lines").style.display= 'none';
-                    document.querySelector(".pageContent").style.display= 'none';
-                    document.querySelector(".countdown").style.display= 'none';
-                    document.querySelector(".contactUs").style.display= 'none';
-                    document.querySelector(".aboutUsText").style.display= 'none';
+                    // document.querySelector(".pageContent").style.display= 'none';
+                    // document.querySelector(".countdown").style.display= 'none';
+                    // document.querySelector(".contactUs").style.display= 'none';
+                    // document.querySelector(".aboutUsText").style.display= 'none';
 
                 }
                 // disable background scroll
@@ -59,12 +59,13 @@ export default function AboutUs() {
             const navbar = document.querySelector(".theNav");
             if (navbar) {
                 navbar.style = ""; // show the navbar
-                                   document.querySelector(".lines").style = "";
-                                        document.querySelector(".pageContent").style = "";
-                                        document.querySelector(".countdown").style = "";
-                                        document.querySelector(".contactUs").style = "";
-                                        document.querySelector(".aboutUsText").style = "";
-            }
+            //                        document.querySelector(".lines").style = "";
+            //                             document.querySelector(".pageContent").style = "";
+            //                             document.querySelector(".countdown").style = "";
+            //                             document.querySelector(".contactUs").style = "";
+            //                             document.querySelector(".aboutUsText").style = "";
+            // }
+            }       
             // enable background scroll
             document.body.style.overflow = "auto";
             // enable background selecting

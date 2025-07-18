@@ -28,13 +28,16 @@ const Carousel = (props) => {
 
 function App() {
     const [noticeVal, setNoticeVal] = useState(0);
-    console.log("🫵🏻 Vai Inspect garera heris hai 😂😂😂")
+        console.log("🫵🏻 Vai Inspect garera heris hai 😂😂😂")
+
 
     useEffect(() => {
        const interval = setInterval(() => {
             setNoticeVal((prevVal)=>{
                 return (prevVal+1) % notices.length
             })
+                console.log("🫵🏻 Vai Inspect garera heris hai 😂😂😂")
+
         }, 3000);
 
         //Clearing the interval
