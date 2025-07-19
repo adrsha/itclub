@@ -36,7 +36,6 @@
   cursor: pointer;
 }
 
-
 .glassCards#image:hover {
   filter: brightness(100%);
   outline: 1px solid var(--color1A);
@@ -68,6 +67,17 @@
   /* align-items: center; */
   /* justify-content: center; */
   font-size: 2.5em;
+  margin-top: 0rem;
+  margin-bottom: 2vh;
+}
+
+.glassCards .noticeTitle {
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
   margin-top: 0rem;
   margin-bottom: 2vh;
 }
@@ -122,7 +132,6 @@
   text-align: left;
 }
 
-
 #notice #noticeContent::before {
   content: "";
   text-align: center;
@@ -155,7 +164,6 @@
   align-items: center;
   justify-content: center;
   color: var(--color1);
-
 }
 
 .discordButton {
@@ -202,6 +210,12 @@
   opacity: 1;
 }
 
+.learnMore {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .tablet {
   font-weight: 800;
   padding: 0.5rem;
@@ -216,7 +230,7 @@
   width: 15vw;
   min-width: 15em;
 }
-.tablet:hover{
+.tablet:hover {
   background-color: var(--color4);
 }
 
@@ -229,12 +243,11 @@
   padding-right: 1rem;
 }
 
-.tabletContent>.post {
+.tabletContent > .post {
   color: var(--color1);
   white-space: nowrap;
   opacity: 0.5;
 }
-
 
 #DetailCard {
   flex: 2;
@@ -244,13 +257,13 @@
   margin-bottom: 0vh;
 }
 
-#DetailCard>hr {
+#DetailCard > hr {
   margin: 2rem;
   border: 1px solid var(--color4a);
 }
 
-#DetailCard>div.cardData,
-#DetailCard>div.cardActions {
+#DetailCard > div.cardData,
+#DetailCard > div.cardActions {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -258,11 +271,11 @@
   border-radius: 0.5rem;
 }
 
-#DetailCard>div.cardData {
+#DetailCard > div.cardData {
   flex: 1;
 }
 
-#DetailCard>div.cardActions {
+#DetailCard > div.cardActions {
   min-width: fit-content;
 }
 

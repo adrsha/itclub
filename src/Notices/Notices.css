@@ -1,12 +1,26 @@
-.Eventlists:nth-child(1)>#DetailCard::before {
-    content: "LATEST";
-    position: absolute;
-    padding: 1em;
-    top: 0;
-    left: 50%;
-    max-width: 20vw;
-    transform: translate(-50%, 0%);
-    background-color: var(--color1);
-    color: var(--color4);
-    border-radius: 0 0 1em 1em;
+.Eventlists:nth-child(1) > #DetailCard::before {
+  content: "LATEST";
+  position: absolute;
+  padding: 1em;
+  top: 0;
+  left: 50%;
+  max-width: 20vw;
+  transform: translate(-50%, 0%);
+  background-color: var(--color1);
+  color: var(--color4);
+  border-radius: 0 0 1em 1em;
+}
+
+.events {
+  display: inline;
+}
+
+.eventContents {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: start;
+}
+.Eventlists {
+  margin: 10px;
 }
