@@ -4,6 +4,7 @@ import member from "../../data/Members.json";
 import dummyImage from "/president.png";
 import { useState, useEffect } from "react";
 import { lenis } from "../Lenis/Lenis.js";
+import { useNavigate } from "react-router-dom";
 
 let cardHtml = member.map((mv) => {
   return (
@@ -89,8 +90,10 @@ function Cards(props) {
         // + MembersOpen}
         id="MembersCard"
       >
-        <div className="cardTitle" style={{ marginBottom: "1rem", marginTop: "20px" }}>
-        
+        <div
+          className="cardTitle"
+          style={{ marginBottom: "1rem", marginTop: "20px" }}
+        >
           Our Members
         </div>
         <div className={"membersList"}>{cardHtml}</div>
@@ -157,25 +160,29 @@ function Cards(props) {
           {Object.prototype.hasOwnProperty.call(props, "title") ? (
             <div className="cardTitle">{props.title}</div>
           ) : null}
-             <div
-        dangerouslySetInnerHTML={{
-          __html: props.description || "<p>No New Notices!!</p>",
-        }}
-      />
+          <div
+            dangerouslySetInnerHTML={{
+              __html: props.description || "<p>No New Notices!!</p>",
+            }}
+          />
         </div>
         <hr />
         <div className="cardActions">
- {Object.prototype.hasOwnProperty.call(props, "button1") ? (
-  <a
-    href={props.disabled1 ? "" : props.link1}
-    onClick={e => props.disabled1 && e.preventDefault()}
-    title={props.disabled1 ? `😔 ${props.button1} is not available right now` : ""}
-  >
-    <button className="activated" disabled={props.disabled1}>
-      {props.button1}
-    </button>
-  </a>
-) : null}
+          {Object.prototype.hasOwnProperty.call(props, "button1") ? (
+            <a
+              href={props.disabled1 ? "" : props.link1}
+              onClick={(e) => props.disabled1 && e.preventDefault()}
+              title={
+                props.disabled1
+                  ? `😔 ${props.button1} is not available right now`
+                  : ""
+              }
+            >
+              <button className="activated" disabled={props.disabled1}>
+                {props.button1}
+              </button>
+            </a>
+          ) : null}
 
           {Object.prototype.hasOwnProperty.call(props, "button2") ? (
             <a href={props.link2}>
@@ -191,38 +198,47 @@ function Cards(props) {
       : "exists";
 
     return (
-
-      
-   <div className={`glassCards glass parallaxEl ${noticeStyle}`} id={props.id}>
-  {props.title && <div className="cardTitle">{props.title}</div>}
-
-  {props.content && (
-    <div className="cardContent" id="noticeContent">
       <div
-        dangerouslySetInnerHTML={{
-          __html: props.content || "<p>No New Notices!!</p>",
-        }}
-      />
-      <div className="noticeSpButtons">
-        {props.buttonDiscord && (
-          <a href={props.buttonDiscord} target="_blank" rel="noopener noreferrer">
-            <button className="discordButton">
-              <img src="/discord_logo.png" alt="Discord Logo" />
-            </button>
-          </a>
-        )}
+        className={`glassCards glass parallaxEl ${noticeStyle}`}
+        id={props.id}
+      >
+        {props.title && <div className="cardTitle">{props.title}</div>}
 
-        {props.buttonForm && (
-          <a href={props.buttonForm} target="_blank" rel="noopener noreferrer">
-            <button className="formButton">
-              <img src="/forms_logo.png" alt="Forms Logo" />
-            </button>
-          </a>
+        {props.content && (
+          <div className="cardContent" id="noticeContent">
+            <div
+              dangerouslySetInnerHTML={{
+                __html: props.content || "<p>No New Notices!!</p>",
+              }}
+            />
+            <div className="noticeSpButtons">
+              {props.buttonDiscord && (
+                <a
+                  href={props.buttonDiscord}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="discordButton">
+                    <img src="/discord_logo.png" alt="Discord Logo" />
+                  </button>
+                </a>
+              )}
+
+              {props.buttonForm && (
+                <a
+                  href={props.buttonForm}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="formButton">
+                    <img src="/forms_logo.png" alt="Forms Logo" />
+                  </button>
+                </a>
+              )}
+            </div>
+          </div>
         )}
       </div>
-    </div>
-  )}
-</div>
     );
   } else if (props.id == "image") {
     return (
@@ -359,6 +375,40 @@ function Cards(props) {
             <button className="deactivated ">{props.button2}</button>
           </a>
         ) : null}
+      </div>
+    );
+  } else if (props.id == "noticeCard") {
+    const navigate = useNavigate();
+    const stripHtml = (html) => {
+      const tmp = document.createElement("div");
+      tmp.innerHTML = html;
+      return tmp.textContent || tmp.innerText || "";
+    };
+
+    const noticeDescription = props.content ? stripHtml(props.content) : "";
+
+    const words = noticeDescription.trim().split(/\s+/);
+    const truncated =
+      words.length > 10
+        ? words.slice(0, 10).join(" ") + "..."
+        : words.join(" ");
+
+    return (
+      <div className="glassCards glass parallaxEl">
+        <div className="noticeTitle">{props.title || "No new notices!!"}</div>
+        <div>{truncated}</div>
+        {props.link && props.content !== "" && (
+          <div className="learnMore">
+            <button
+              className="activated"
+              onClick={() => {
+                navigate(props.link);
+              }}
+            >
+              Learn more
+            </button>
+          </div>
+        )}
       </div>
     );
   }
