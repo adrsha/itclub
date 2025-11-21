@@ -67,15 +67,10 @@ function App() {
                 />
                 <Carousel defPath={notices[noticeVal].posterImage} id={noticeVal}/>
                 <Cards
-                    id="notice"
+                    id="noticeCard"
                     title={notices[0].noticeHead}
                     content={notices[0].noticeBody}
-                    button1="All Notices"
-                    buttonDiscord={notices[0].buttonDiscord}
-                    buttonForm={notices[0].buttonForm}
-                    link1="/notices"
-                    button2="All Events"
-                    link2="/events"
+                    link="/notices"
                 />
             </div>
             <AboutUs />

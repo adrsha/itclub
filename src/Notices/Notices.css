@@ -10,3 +10,15 @@
     color: var(--color4);
     border-radius: 0 0 1em 1em;
 }
+
+
+
+.eventContents {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: start;
+}
+.Eventlists {
+  margin: 10px;
+}
