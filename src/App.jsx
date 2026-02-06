@@ -70,7 +70,7 @@ function App() {
                     id="noticeCard"
                     title={notices[0].noticeHead}
                     content={notices[0].noticeBody}
-                    link="/notices"
+                    link={`/notices/${notices[0].id}`}
                 />
             </div>
             <AboutUs />

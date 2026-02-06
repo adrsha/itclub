@@ -298,11 +298,6 @@
   margin-left: auto;
 }
 
-.learnMore {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 .glassCards .noticeTitle {
   font-family: "JetBrains Mono", monospace;
@@ -313,4 +308,21 @@
   font-size: 2em;
   margin-top: 0rem;
   margin-bottom: 2vh;
+}
+
+.noticeCardButtons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 1rem;
+}
+
+.noticeCardButtons .activated {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.noticeCardButtons .viewAllButton {
+  background-color: var(--color4a);
+  color: var(--color1a);
 }

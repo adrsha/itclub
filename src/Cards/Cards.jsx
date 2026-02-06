@@ -4,7 +4,7 @@ import member from "../../data/Members.json";
 import dummyImage from "/president.png";
 import { useState, useEffect } from "react";
 import { lenis } from "../Lenis/Lenis.js";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 
 let cardHtml = member.map((mv) => {
   return (
@@ -379,6 +379,7 @@ function Cards(props) {
     );
   } else if (props.id == "noticeCard") {
     const navigate = useNavigate();
+    const location = useLocation();
     const stripHtml = (html) => {
       const tmp = document.createElement("div");
       tmp.innerHTML = html;
@@ -397,18 +398,32 @@ function Cards(props) {
       <div className="glassCards glass parallaxEl">
         <div className="noticeTitle">{props.title || "No new notices!!"}</div>
         <div>{truncated}</div>
-        {props.link && props.content !== "" && (
-          <div className="learnMore">
-            <button
-              className="activated"
-              onClick={() => {
-                navigate(props.link);
-              }}
-            >
-              Learn more
-            </button>
-          </div>
-        )}
+        <div className="noticeCardButtons">
+          {props.link && props.content !== "" && (
+            <div className="learnMore">
+              <button
+                className="activated"
+                onClick={() => {
+                  navigate(props.link);
+                }}
+              >
+                Learn more
+              </button>
+            </div>
+          )}
+          {location.pathname !== "/notices" && (
+            <div className="viewAllNotices">
+              <button
+                className="activated viewAllButton"
+                onClick={() => {
+                  navigate("/notices");
+                }}
+              >
+                View All Notices
+              </button>
+            </div>
+          )}
+        </div>
       </div>
     );
   }

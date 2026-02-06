@@ -19,6 +19,11 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+  .glassCards {
+    margin: 0 auto;
+  }
+
   .glassCards#circleButtons{
     z-index: 1;
   }
